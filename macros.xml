@@ -1,0 +1,9 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Paste Word">
+      <action id="EditorDeleteToWordStart" />
+      <action id="EditorDeleteToWordEnd" />
+      <action id="EditorPaste" />
+    </macro>
+  </component>
+</application>

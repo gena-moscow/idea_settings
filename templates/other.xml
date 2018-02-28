@@ -1,0 +1,16 @@
+<templateSet group="other">
+  <template name="ep" value="enum $VAR$ implements EnumI, EnumParamI {&#10;    a(0),&#10;    ;&#10;&#10;    private int value;&#10;    $VAR$(int value) {&#10;        this.value = value;&#10;    }&#10;    private static Map&lt;Integer, $VAR$&gt; map = new HashMap&lt;&gt;();&#10;    static ParameterId paramId = ;&#10;    static {&#10;        for ($VAR$ e: $VAR$.values())&#10;            map.put(e.value, e);&#10;    }&#10;    @Override&#10;    public ParameterId param() {&#10;        return paramId;&#10;    }&#10;    @Override&#10;    public int value() {&#10;        return this.value;&#10;    }&#10;    @Override&#10;    public $VAR$ id(int value) {&#10;        $VAR$ ret = map.get(value);&#10;        if (ret == null)&#10;            throw new NoSuchElementException(&quot;Unknown $VAR$: &quot; + value);&#10;        return ret;&#10;    }&#10;}&#10;" description="Insert param enum" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="em" value="enum $VAR$ implements EnumI {&#10;    a(0),&#10;    ;&#10;&#10;    private int value;&#10;    $VAR$(int value) {&#10;        this.value = value;&#10;    }&#10;    private static Map&lt;Integer, $VAR$&gt; map = new HashMap&lt;&gt;();&#10;    static {&#10;        for ($VAR$ e: $VAR$.values())&#10;            map.put(e.value, e);&#10;    }&#10;    @Override&#10;    public int value() {&#10;        return this.value;&#10;    }&#10;    public static $VAR$ id(int value) {&#10;        $VAR$ ret = map.get(value);&#10;        if (ret == null)&#10;            throw new NoSuchElementException(&quot;Unknown $VAR$: &quot; + value);&#10;        return ret;&#10;    }&#10;}&#10;" description="insert enum" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
