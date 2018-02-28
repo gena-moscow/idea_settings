@@ -49,6 +49,9 @@
     <mouse-shortcut keystroke="button5" />
     <keyboard-shortcut first-keystroke="alt right" />
   </action>
+  <action id="InspectCode">
+    <keyboard-shortcut first-keystroke="alt i" />
+  </action>
   <action id="Macro.Copy Word">
     <keyboard-shortcut first-keystroke="begin" />
   </action>
