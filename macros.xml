@@ -5,5 +5,9 @@
       <action id="EditorDeleteToWordEnd" />
       <action id="EditorPaste" />
     </macro>
+    <macro name="Copy Word">
+      <action id="EditorSelectWord" />
+      <action id="EditorCopy" />
+    </macro>
   </component>
 </application>
