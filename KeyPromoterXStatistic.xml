@@ -9,6 +9,14 @@
           <Count>24</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Debug 'MqttSender'">
+        <Item>
+          <IdeaActionID>Debug</IdeaActionID>
+          <ShortCut>'Alt+F5'</ShortCut>
+          <Description>Debug 'MqttSender'</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Debug 'TestTest.Test'">
         <Item>
           <IdeaActionID>Debug</IdeaActionID>
@@ -89,6 +97,14 @@
           <Count>2</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Run 'MqttSender.main()'">
+        <Item>
+          <IdeaActionID>RunClass</IdeaActionID>
+          <ShortCut>'Ctrl+F9'</ShortCut>
+          <Description>Run 'MqttSender.main()'</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Run 'TestTest.Test'">
         <Item>
           <IdeaActionID>Run</IdeaActionID>
@@ -103,6 +119,14 @@
           <ShortCut>'Alt+F7'</ShortCut>
           <Description>Settings...</Description>
           <Count>15</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Stop 'MqttSender'">
+        <Item>
+          <IdeaActionID>Stop</IdeaActionID>
+          <ShortCut>'Shift+F5'</ShortCut>
+          <Description>Stop 'MqttSender'</Description>
+          <Count>1</Count>
         </Item>
       </Statistic>
       <Statistic Action="Update Project...">
